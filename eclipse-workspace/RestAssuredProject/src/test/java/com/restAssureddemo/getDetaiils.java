@@ -14,6 +14,8 @@ public class getDetaiils {
 
 	public void getPet() {
 
+		// "https://petstore.swagger.io/";
+
 		RestAssured.baseURI = "https://petstore.swagger.io/";
 
 		Response response = given().header("accept", "application/xml").when()

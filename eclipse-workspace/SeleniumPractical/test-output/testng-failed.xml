@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNgDemo.ddf">
+      <class name="practice.Windowexamples">
         <methods>
-          <include name="test1"/>
+          <include name="windowsOpen"/>
         </methods>
-      </class> <!-- TestNgDemo.ddf -->
+      </class> <!-- practice.Windowexamples -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

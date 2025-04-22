@@ -9,7 +9,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 
@@ -42,18 +41,19 @@ public class GoogleSerchList {
 			System.out.println(value);
 
 		}
-
 	}
 
 	public static void getsSreenshot() throws Exception {
 
 		try {
-			File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(file, new File(".//screenshot/test2.png"));
+			File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
-		} catch (WebDriverException e) {
+			FileUtils.copyFile(screenshotFile, new File("//.screenshot/test3.png"));
+
+		} catch (Exception e) {
 
 			e.printStackTrace();
 		}
+
 	}
 }
